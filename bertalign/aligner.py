@@ -3,6 +3,8 @@ import numpy as np
 from bertalign.corelib import *
 from bertalign.utils import *
 from bertalign.eval import *
+from bertalign.encoder import Encoder
+
 
 class Bertalign:
     def __init__(self,
