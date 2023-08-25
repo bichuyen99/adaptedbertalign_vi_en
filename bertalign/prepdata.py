@@ -1,6 +1,5 @@
 from bertalign.utils import *
 import fasttext
-from huggingface_hub import hf_hub_download
 
 def preprocessing_data(source, word_vi, word_en, model_fasttext):
 	# Load the data
