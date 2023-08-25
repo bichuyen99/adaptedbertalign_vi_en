@@ -34,5 +34,3 @@ def preprocessing_data(source, word_vi, word_en, model_fasttext):
 	        doc_en[i] = ' '.join(sentences[1:])
 
 		return doc_en, doc_vi
-
-
