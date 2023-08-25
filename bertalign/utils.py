@@ -66,6 +66,15 @@ def batchify(data, batch_size):
     batches = [data[i * batch_size : (i + 1) * batch_size] for i in range(num_batches)]
     return batches
 
+def create_document(paragraphs, add_line_break=True):
+    if add_line_break:
+        # Concatenate paragraphs with line breaks between them
+        document = '\n'.join(paragraphs)
+    else:
+        # Concatenate paragraphs without line breaks
+        document = ' '.join(paragraphs)
+    return document
+    
 def detect_lang(text):
     translator = Translator(service_urls=[
       'translate.google.com.hk',
