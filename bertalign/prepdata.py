@@ -7,7 +7,7 @@ def preprocessing_data(source, word_vi, word_en, model_fasttext):
 	# Load the data
 	data = []
 	with open(source, 'r') as file:
-    		data = [eval(line) for line in file]
+    	data = [eval(line) for line in file]
 
 	# Split the data into English and Vietnamese sentences
 	sents_en = [clean_text(delete_sentences(entry["article_en"],word_en,'url')) for entry in data]
