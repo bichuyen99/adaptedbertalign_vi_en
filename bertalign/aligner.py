@@ -1,7 +1,6 @@
 """
 Bertalign initialization
 """
-
 from bertalign.prepdata import *
 from bertalign.utils import *
 from bertalign.aligner import *
@@ -11,6 +10,7 @@ import nltk
 nltk.download('punkt')
 import warnings
 warnings.filterwarnings("ignore")
+import numpy as np
 
 model_name = "LaBSE"
 model = Encoder(model_name)
