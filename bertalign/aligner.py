@@ -5,6 +5,7 @@ Bertalign initialization
 from bertalign.prepdata import *
 from bertalign.utils import *
 from bertalign.aligner import *
+from bertalign.encoder import Encoder
 from huggingface_hub import hf_hub_download
 import nltk
 nltk.download('punkt')
