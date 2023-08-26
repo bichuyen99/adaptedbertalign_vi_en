@@ -1,9 +1,15 @@
-import numpy as np
+"""
+Bertalign initialization
+"""
 
-from bertalign.corelib import *
+from bertalign.prepdata import *
 from bertalign.utils import *
-from bertalign.eval import *
-from bertalign.encoder import Encoder
+from bertalign.aligner import *
+from huggingface_hub import hf_hub_download
+import nltk
+nltk.download('punkt')
+import warnings
+warnings.filterwarnings("ignore")
 
 model_name = "LaBSE"
 model = Encoder(model_name)
