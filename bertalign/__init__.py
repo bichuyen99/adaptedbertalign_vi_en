@@ -5,6 +5,7 @@ Bertalign initialization
 from bertalign.prepdata import *
 from bertalign.utils import *
 from bertalign.aligner import *
+from huggingface_hub import hf_hub_download
 
 source = 'data/songngu.txt'
 word_vi = 'Theo:'
