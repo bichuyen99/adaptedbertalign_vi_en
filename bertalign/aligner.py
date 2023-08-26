@@ -109,6 +109,13 @@ class Bertalign:
 # Document alignment
 def align_documents(batches_en, batches_vi):
     iter = 0
+    # Initialize variables to store the sum of each score type
+    total_recall_strict = 0
+    total_recall_lax = 0
+    total_precision_strict = 0
+    total_precision_lax = 0
+    total_f1_strict = 0
+    total_f1_lax = 0
     for batch_idx, (batch_en, batch_vi) in enumerate(zip(batches_en, batches_vi)):
         iter = batch_idx + 1
         print(f"Batch {iter}:")
